@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Transaction } from "./Transaction";
 import { GlobalContext } from "../context/GlobalState";
+import { Chart } from "./Chart";
 
 export const TransactionList = () => {
   const { transactions, getTransactions } = useContext(GlobalContext);
@@ -13,11 +14,12 @@ export const TransactionList = () => {
   return (
     <>
       <h3>History</h3>
-      <ul className="list">
+      <ul className='list'>
         {transactions.map((transaction) => (
           <Transaction key={transaction.id} transaction={transaction} />
         ))}
       </ul>
+      <Chart />
     </>
   );
 };

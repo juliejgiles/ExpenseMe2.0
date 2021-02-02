@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Header = () => {
-  return <h2>Expense Tracker Beta</h2>;
+  return <h2></h2>;
 };
