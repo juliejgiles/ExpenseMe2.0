@@ -13,7 +13,7 @@ function App() {
   return (
     <GlobalProvider>
       <Header />
-      <div className="container">
+      <div className='container'>
         <Balance />
         <IncomeExpenses />
         <TransactionList />
