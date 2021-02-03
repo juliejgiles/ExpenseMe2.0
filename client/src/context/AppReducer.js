@@ -1,7 +1,7 @@
 //reducer changes the state and sends it down to components
 export default (state, action) => {
   switch (action.type) {
-    case "GET_TRANSACTION":
+    case "GET_TRANSACTIONS":
       return {
         ...state, //return initial state
         loading: false,
