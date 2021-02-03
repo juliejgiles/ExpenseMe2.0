@@ -1,5 +1,10 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
+import { Balance } from "./Balance";
+import { IncomeExpenses } from "./IncomeExpenses";
+import { TransactionList } from "./TransactionList";
+import { Chart } from "./Chart";
+import background from "../Expense-Tracker.png";
 
 export const AddTransaction = () => {
   //component level state
@@ -21,6 +26,10 @@ export const AddTransaction = () => {
   };
   return (
     <>
+      <Balance />
+      <IncomeExpenses />
+      <TransactionList />
+      <Chart />
       <h3>Add new transaction</h3>
       <form onSubmit={onSubmit}>
         <div className='form-control'>

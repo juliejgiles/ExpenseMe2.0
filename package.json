@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "chart.js": "^2.9.4",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",

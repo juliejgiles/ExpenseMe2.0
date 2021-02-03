@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap");
+
+.bgImg {
+}
 
 .chart {
   position: absolute;
@@ -17,21 +21,23 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-image: url("./Expense-Tracker.png");
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Spartan", sans-serif;
+  background-color: #5271ff;
 }
 
 .container {
   margin: 30px auto;
   width: 350px;
   position: absolute;
-  left: 80px;
+  left: 260px;
   top: 20px;
 }
 
@@ -121,6 +127,14 @@ input[type="number"] {
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
+}
+
+.listOne {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  position: absolute;
+  left: 500px;
 }
 
 .list li {
