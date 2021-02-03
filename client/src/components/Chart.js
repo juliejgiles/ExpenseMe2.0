@@ -7,6 +7,8 @@ const Dankmemes = () => {
   const [chartData, setChartData] = useState({});
   const { transactions } = useContext(GlobalContext);
 
+  const clickHandler = () => {};
+
   const Chart = () => {
     const amounts = transactions.map((transaction) => transaction.amount);
     const titles = transactions.map((transaction) => transaction.text);
@@ -41,41 +43,17 @@ const Dankmemes = () => {
 
   useEffect(() => {
     Chart();
-  }, []);
+  });
 
   return (
     <div className='chart'>
       <h1>Check Yo Spendings</h1>
       <div>
-        <Pie
-          data={chartData}
-          options={{
-            responsive: true,
-            title: { text: "THICCNESS SCALE", display: true },
-            scales: {
-              yAxes: [
-                {
-                  ticks: {
-                    autoSkip: true,
-                    maxTicksLimit: 10,
-                    beginAtZero: true,
-                  },
-                  gridLines: {
-                    display: false,
-                  },
-                },
-              ],
-              xAxes: [
-                {
-                  gridLines: {
-                    display: false,
-                  },
-                },
-              ],
-            },
-          }}
-        />
+        <Pie data={chartData} />
       </div>
+      <button type='button' onClick={clickHandler}>
+        Click Me!
+      </button>
     </div>
   );
 };
