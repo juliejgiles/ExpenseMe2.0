@@ -1,25 +1,22 @@
 import React, { useState, useEffect, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import { Bar, Line, Pie } from "react-chartjs-2";
-
 import { numberWithCommas } from "../utils/format";
 
-export const Chart = () => {
-  const [percentage, setpercentage] = useState(1);
-  const [data, setData] = useState([]);
+const Dankmemes = () => {
+  const [chartData, setChartData] = useState({});
   const { transactions } = useContext(GlobalContext);
-  const amounts = transactions.map((transaction) => transaction.amount);
-  const titles = transactions.map((transaction) => transaction.text);
 
-  console.log([titles]);
+  const Chart = () => {
+    const amounts = transactions.map((transaction) => transaction.amount);
+    const titles = transactions.map((transaction) => transaction.text);
 
-  useEffect(() => {
-    setData({
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    setChartData({
+      labels: titles,
       datasets: [
         {
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: amounts,
           backgroundColor: [
             "rgba(255, 99, 132, 0.2)",
             "rgba(54, 162, 235, 0.2)",
@@ -40,79 +37,47 @@ export const Chart = () => {
         },
       ],
     });
-  }, [setpercentage, setData]);
+  };
+
+  useEffect(() => {
+    Chart();
+  }, []);
 
   return (
     <div className='chart'>
+      <h1>Check Yo Spendings</h1>
       <div>
-        <ErrorChart data={data} />
+        <Pie
+          data={chartData}
+          options={{
+            responsive: true,
+            title: { text: "THICCNESS SCALE", display: true },
+            scales: {
+              yAxes: [
+                {
+                  ticks: {
+                    autoSkip: true,
+                    maxTicksLimit: 10,
+                    beginAtZero: true,
+                  },
+                  gridLines: {
+                    display: false,
+                  },
+                },
+              ],
+              xAxes: [
+                {
+                  gridLines: {
+                    display: false,
+                  },
+                },
+              ],
+            },
+          }}
+        />
       </div>
     </div>
   );
 };
 
-const ErrorChart = ({ data }) => {
-  return (
-    <div>
-      <Bar data={data}></Bar>
-    </div>
-  );
-};
-
-//------------------------------------------------------
-
-// export const Chart = () => {
-//   const { transactions } = useContext(GlobalContext);
-// const amounts = transactions.map((transaction) => transaction.amount);
-// const titles = transactions.map((transaction) => transaction.text);
-
-//   console.log(amounts);
-//   return (
-//     <div className='chart'>
-//       <h4>Income</h4>
-//       <p className='money plus'>{amounts}</p>
-//       <p className='money plus'>{titles}</p>
-//     </div>
-//   );
-// };
-
-//----------------------------------------------------
-
-// import React, { Component } from "react";
-// import { Bar, Line, Pie } from "react-chartjs-2";
-
-// export class Chart extends Component {
-//   constructor(props) {
-//     super(props);
-
-//     this.state = {
-//       chartData: {
-//         labels: ["Beer", "Food", "Rocket League", "Clothes"],
-//         datasets: [
-//           { label: "Amount" },
-//           {
-//             data: [2300, 2200, 2100, 2100],
-//             backgroundColor: ["#F241DD", "#3E9CF0", "#7C9D86", "#B2EF7A"],
-//           },
-//         ],
-//       },
-//     };
-//   }
-//   render() {
-//     return (
-//       <div className='chart'>
-//         <Bar
-//           data={this.state.chartData}
-//           options={{
-//             title: {
-//               display: true,
-//               text: "Watch your spending fam",
-//               fontSize: 25,
-//             },
-//             legend: { display: true, position: "right" },
-//           }}
-//         />
-//       </div>
-//     );
-//   }
-// }
+export default Dankmemes;

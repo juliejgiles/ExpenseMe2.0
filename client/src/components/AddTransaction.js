@@ -3,7 +3,7 @@ import { GlobalContext } from "../context/GlobalState";
 import { Balance } from "./Balance";
 import { IncomeExpenses } from "./IncomeExpenses";
 import { TransactionList } from "./TransactionList";
-import { Chart } from "./Chart";
+import Dankmemes from "./Chart";
 import background from "../Expense-Tracker.png";
 
 export const AddTransaction = () => {
@@ -29,7 +29,7 @@ export const AddTransaction = () => {
       <Balance />
       <IncomeExpenses />
       <TransactionList />
-      <Chart />
+      <Dankmemes />
       <h3>Add new transaction</h3>
       <form onSubmit={onSubmit}>
         <div className='form-control'>
