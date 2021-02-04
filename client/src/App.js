@@ -3,6 +3,7 @@ import { Holidays } from "./pages/Holidays";
 import { MoneyTips } from "./pages/MoneyTips";
 import { Tools } from "./pages/Tools";
 import { Dashboard } from "./pages/Dashboard";
+import { MakeEntry } from "./pages/MakeEntry";
 import {
   BrowserRouter as Router,
   Route,
@@ -27,6 +28,9 @@ function App() {
       </Switch>
       <Switch>
         <Route path={"/moneytips"} exact={true} component={MoneyTips} />
+      </Switch>
+      <Switch>
+        <Route path={"/entry"} exact={true} component={MakeEntry} />
       </Switch>
     </Router>
   );

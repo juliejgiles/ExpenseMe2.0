@@ -14,6 +14,9 @@ export const Tools = () => {
           <Link to="/moneytips/">Money Tips</Link>
         </li>
         <li>
+          <Link to="/entry/">Make an entry</Link>
+        </li>
+        <li>
           <Link to="/">Back</Link>
         </li>
       </ul>
