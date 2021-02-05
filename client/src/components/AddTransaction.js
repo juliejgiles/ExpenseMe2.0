@@ -1,9 +1,6 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import { Balance } from "./Balance";
-import { IncomeExpenses } from "./IncomeExpenses";
-import { TransactionList } from "./TransactionList";
-import Dankmemes from "./Chart";
+
 import background from "../Expense-Tracker.png";
 
 export const AddTransaction = () => {
@@ -26,10 +23,6 @@ export const AddTransaction = () => {
   };
   return (
     <>
-      <Balance />
-      <IncomeExpenses />
-      <TransactionList />
-      <Dankmemes />
       <h3>Add new transaction</h3>
       <form onSubmit={onSubmit}>
         <div className='form-control'>

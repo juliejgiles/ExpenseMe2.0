@@ -6,26 +6,30 @@ import { numberWithCommas } from "../utils/format";
 const Dankmemes = () => {
   const [chartData, setChartData] = useState({});
   const { transactions } = useContext(GlobalContext);
-
-  const clickHandler = () => {};
+  const amounts = transactions.map((transaction) => transaction.amount);
+  const titles = transactions.map((transaction) => transaction.text);
 
   const Chart = () => {
-    const amounts = transactions.map((transaction) => transaction.amount);
-    const titles = transactions.map((transaction) => transaction.text);
-
     setChartData({
       labels: titles,
       datasets: [
         {
-          label: "# of Votes",
+          label: "$",
           data: amounts,
           backgroundColor: [
-            "rgba(255, 99, 132, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
-            "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)",
+            "rgba(255, 99, 132, 0.6)",
+            "rgba(54, 162, 235, 0.6)",
+            "rgba(255, 206, 86, 0.6)",
+            "rgba(75, 192, 192, 0.6)",
+            "rgba(153, 102, 255, 0.6)",
+            "rgba(255, 159, 64, 0.6)",
+            "rgba(255, 99, 132, 0.6)",
+            "rgba(54, 162, 235, 0.6)",
+            "rgba(255, 206, 86, 0.6)",
+            "rgba(75, 192, 192, 0.6)",
+            "rgba(153, 102, 255, 0.6)",
+            "rgba(255, 159, 64, 0.6)",
+            "rgba(255, 99, 132, 0.6)",
           ],
           borderColor: [
             "rgba(255, 99, 132, 1)",
@@ -34,6 +38,13 @@ const Dankmemes = () => {
             "rgba(75, 192, 192, 1)",
             "rgba(153, 102, 255, 1)",
             "rgba(255, 159, 64, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(54, 162, 235, 1)",
+            "rgba(255, 206, 86, 1)",
+            "rgba(75, 192, 192, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(255, 99, 132, 1)",
           ],
           borderWidth: 1,
         },
@@ -43,17 +54,41 @@ const Dankmemes = () => {
 
   useEffect(() => {
     Chart();
-  });
+  }, [{ setChartData }]);
 
   return (
     <div className='chart'>
-      <h1>Check Yo Spendings</h1>
       <div>
-        <Pie data={chartData} />
+        <Bar
+          data={chartData}
+          options={{
+            responsive: true,
+            maintainAspectRatio: true,
+            title: { text: "Your Expense Visualised", display: false },
+            scales: {
+              yAxes: [
+                {
+                  ticks: {
+                    autoSkip: false,
+                    maxTicksLimit: 10,
+                    beginAtZero: true,
+                  },
+                  gridLines: {
+                    display: false,
+                  },
+                },
+              ],
+              xAxes: [
+                {
+                  gridLines: {
+                    display: false,
+                  },
+                },
+              ],
+            },
+          }}
+        />
       </div>
-      <button type='button' onClick={clickHandler}>
-        Click Me!
-      </button>
     </div>
   );
 };
