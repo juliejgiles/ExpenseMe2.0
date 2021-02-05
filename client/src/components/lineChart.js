@@ -3,7 +3,7 @@ import { GlobalContext } from "../context/GlobalState";
 import { Bar, Line, Pie } from "react-chartjs-2";
 import { numberWithCommas } from "../utils/format";
 
-const Dankmemes = () => {
+const LineChart = () => {
   const [chartData, setChartData] = useState({});
   const { transactions } = useContext(GlobalContext);
   const amounts = transactions.map((transaction) => transaction.amount);
@@ -29,7 +29,7 @@ const Dankmemes = () => {
             "rgba(75, 192, 192, 0.6)",
             "rgba(153, 102, 255, 0.6)",
             "rgba(255, 159, 64, 0.6)",
-            "rgba(255, 99, 132, 0.6)",
+            "rgba(255, 159, 64, 0.6)",
           ],
           borderColor: [
             "rgba(255, 99, 132, 1)",
@@ -44,7 +44,7 @@ const Dankmemes = () => {
             "rgba(75, 192, 192, 1)",
             "rgba(153, 102, 255, 1)",
             "rgba(255, 159, 64, 1)",
-            "rgba(255, 99, 132, 1)",
+            "rgba(255, 159, 64, 1)",
           ],
           borderWidth: 1,
         },
@@ -59,7 +59,7 @@ const Dankmemes = () => {
   return (
     <div className='chart'>
       <div>
-        <Bar
+        <Line
           data={chartData}
           options={{
             responsive: true,
@@ -93,4 +93,4 @@ const Dankmemes = () => {
   );
 };
 
-export default Dankmemes;
+export default LineChart;
