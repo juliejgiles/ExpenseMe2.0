@@ -1,14 +1,15 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const colors = require("colors"); //to add colours to the console
-const morgan = require("morgan");
-const connectDB = require("./config/db");
+const express = require('express');
+const dotenv = require('dotenv');
+const colors = require('colors'); //to add colours to the console
+const morgan = require('morgan');
+const path = require('path');
+const connectDB = require('./config/db');
 
-dotenv.config({ path: "./config/config.env" });
+dotenv.config({ path: './config/config.env' });
 
 connectDB();
 
-const transactions = require("./routes/transactions");
+const transactions = require('./routes/transactions');
 
 const app = express();
 
@@ -16,11 +17,21 @@ const app = express();
 app.use(express.json());
 
 //incorporating Morgan
-if (process.env.NODE_ENV === "development") {
-  app.use(morgan("dev"));
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
 }
 
-app.use("/api/v1/transactions", transactions);
+app.use('/api/v1/transactions', transactions);
+
+// Serve static assets if in production
+if (process.env.NODE_ENV === 'production') {
+  // Set static folder
+  app.use(express.static('client/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 
