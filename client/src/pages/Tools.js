@@ -8,16 +8,16 @@ export const Tools = () => {
 
       <ul>
         <li>
-          <Link to="/holidays/">Plan your holiday!</Link>
+          <Link to='/holidays/'>Plan your holiday!</Link>
         </li>
         <li>
-          <Link to="/moneytips/">Money Tips</Link>
+          <Link to='/moneytips/'>Money Tips</Link>
         </li>
         <li>
-          <Link to="/entry/">Make an entry</Link>
+          <Link to='/entry/'>Make an entry</Link>
         </li>
         <li>
-          <Link to="/">Back</Link>
+          <Link to='/'>Back</Link>
         </li>
       </ul>
     </div>
