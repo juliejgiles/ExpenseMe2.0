@@ -1,6 +1,161 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+.modal-backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(82, 113, 255, 0.6); */
+}
+
+#btn {
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  background: #d9d9d9;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 17px;
+  /* font-family: "Cookie", cursive; */
+  position: absolute;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  position: absolute;
+  left: 650px;
+  bottom: 20px;
+  width: 70px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+#btnTwo {
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  background: grey;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  /* font-family: "Cookie", cursive; */
+  position: absolute;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  position: absolute;
+  left: 670px;
+  bottom: 20px;
+  width: 70px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
+.modal-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 100px;
+}
+
+.modal-content-wrapper {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: blue;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 330px;
+  border-radius: 20px;
+  background-image: url("./Dashboard.png");
+}
+
+/* .buttonOne {
+  background-color: green;
+  position: absolute;
+  right: 380px;
+  top: 40px;
+  width: 70px;
+  height: 25px;
+  border-radius: 10px;
+} */
+
 .dash-title {
   color: #5271ff;
   font-size: 60px;
