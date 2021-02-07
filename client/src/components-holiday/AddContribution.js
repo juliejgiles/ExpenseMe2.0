@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../context-holiday/GlobalState";
 
 export const AddContribution = () => {
   const [text, setText] = useState("");
@@ -9,11 +9,13 @@ export const AddContribution = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
     const newContribution = {
       id: Math.floor(Math.random() * 1000000),
       text: text,
       amount: +amount,
     };
+
     addContribution(newContribution);
   };
 
@@ -22,7 +24,7 @@ export const AddContribution = () => {
       <h3>Make a contribution towards your goal </h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
-          <label htmlFor="text">Date</label>
+          <label htmlFor="text">Description</label>
           <input
             type="text"
             value={text}

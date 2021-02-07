@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../context-holiday/GlobalState";
 
 //Adding commas to money figures using regex
 import { numberWithCommas } from "../utils/format";
 
 export const GoalDescription = () => {
-  const { transactions } = useContext(GlobalContext);
-  const amounts = transactions.map((transaction) => transaction.amount);
+  const { contributions } = useContext(GlobalContext);
+  const amounts = contributions.map((contribution) => contribution.amount);
   const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
   return (
     <>

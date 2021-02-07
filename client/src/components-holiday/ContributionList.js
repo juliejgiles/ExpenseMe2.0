@@ -3,7 +3,11 @@ import { GlobalContext } from "../context-holiday/GlobalState";
 import { Contribution } from "./Contribution";
 
 export const ContributionList = () => {
-  const { contributions } = useContext(GlobalContext);
+  const { contributions, getContributions } = useContext(GlobalContext);
+
+  useEffect(() => {
+    getContributions();
+  }, []);
 
   return (
     <>
