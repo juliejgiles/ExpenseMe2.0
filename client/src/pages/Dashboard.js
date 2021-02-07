@@ -6,17 +6,16 @@ import React, {
 } from "react";
 import { Header } from "../components/Header";
 import { GlobalProvider } from "../context/GlobalState";
-import { Link } from "react-router-dom";
 import Dankmemes from "../components/Chart";
 import PieChart from "../components/pieChart";
 import LineChart from "../components/lineChart";
-import { Balance } from "../components/Balance";
 import { IncomeExpenses } from "../components/IncomeExpenses";
 import { TransactionList } from "../components/TransactionList";
 import { useTransition, animated } from "react-spring";
 import { Modal } from "./modal";
 import { MakeEntry } from "./MakeEntry";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const pages = [
   ({ style }) => (
@@ -47,15 +46,31 @@ export const Dashboard = () => {
     enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
     leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
   });
+
   return (
     <GlobalProvider>
       <Header />
-
       <div className='dashboard'>
-        <div id='btn' onClick={() => modalRef.current.open()}>
-          <span className='buttonOne'>Make An Entry</span>
+        <div
+          className='button'
+          id='button-3'
+          onClick={() => modalRef.current.open()}
+        >
           <div id='circle'></div>
+          <a>Make An Entry</a>
         </div>
+        <Link to='/tools'>
+          <div class='button' id='button-7'>
+            <div id='dub-arrow'>
+              <img
+                src='https://www.flaticon.com/svg/vstatic/svg/1077/1077198.svg?token=exp=1612690504~hmac=f4078d1ed3006a9ad20c938b81384c42'
+                alt=''
+              />
+            </div>
+
+            <a>Use The Tools</a>
+          </div>
+        </Link>
 
         <div className='container-two'>
           <h1 className='dash-title'>Dashboard</h1>

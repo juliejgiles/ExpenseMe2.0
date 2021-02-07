@@ -19,7 +19,7 @@ export const Modal = forwardRef((props, ref) => {
             initial={{
               opacity: 0,
             }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             animate={{
               opacity: 1,
             }}
@@ -34,7 +34,7 @@ export const Modal = forwardRef((props, ref) => {
             initial={{
               scale: 0,
             }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             animate={{
               scale: 1,
             }}

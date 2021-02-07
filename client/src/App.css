@@ -2,6 +2,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
+.tool-container {
+  position: relative;
+}
+
+.cardOne {
+  width: 30ch;
+  height: 30ch;
+  background: grey;
+  border-radius: 5px;
+  background-image: url("./Exp-Card.png");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+  position: absolute;
+  left: 300px;
+  top: 235px;
+}
+
+.cardTwo {
+  width: 30ch;
+  height: 30ch;
+  background: grey;
+  border-radius: 5px;
+  background-image: url("./Money-Tip.png");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+  position: absolute;
+  right: 230px;
+  top: 250px;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.tool {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: #f1f1f2; /* Just to visualize the extent */
+  background-image: url("./Tool-Backdrop.png");
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.deleteTrans {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  overflow: hidden;
+  width: 500px;
+}
+
 .modal-backdrop {
   position: fixed;
   height: 100vh;
@@ -11,116 +74,165 @@
   background: rgba(0, 0, 0, 0.6);
   /* background: rgba(82, 113, 255, 0.6); */
 }
-
-#btn {
-  height: 50px;
-  min-width: 150px;
-  border: none;
-  border-radius: 10px;
-  font-size: 17px;
-  font-family: "Roboto Condensed", sans-serif;
-  position: relative;
-  transition: 1s;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding-top: 5px;
-  background: #d9d9d9;
-  height: 50px;
-  min-width: 150px;
-  border: none;
-  border-radius: 10px;
-  color: #000000;
-  font-size: 17px;
-  /* font-family: "Cookie", cursive; */
-  position: absolute;
-  transition: 1s;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding-top: 5px;
-  position: absolute;
-  left: 650px;
-  bottom: 20px;
-  width: 70px;
-  height: 35px;
-  border-radius: 20px;
-}
-
-#btnTwo {
-  height: 50px;
-  min-width: 150px;
-  border: none;
-  border-radius: 10px;
-  font-size: 17px;
-  font-family: "Roboto Condensed", sans-serif;
-  position: relative;
-  transition: 1s;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding-top: 5px;
-  background: grey;
-  height: 50px;
-  min-width: 150px;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-size: 17px;
-  /* font-family: "Cookie", cursive; */
-  position: absolute;
-  transition: 1s;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding-top: 5px;
-  position: absolute;
-  left: 670px;
-  bottom: 20px;
-  width: 70px;
-  height: 35px;
-  border-radius: 20px;
-}
-
-#btn #circle {
-  width: 5px;
-  height: 5px;
-  background: transparent;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  overflow: hidden;
-  transition: 500ms;
-}
-
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-#btn:hover {
-  background: transparent;
-}
-
-#btn:hover #circle {
-  height: 50px;
+.button {
+  display: inline-flex;
+  height: 40px;
   width: 150px;
+  border: 2px solid #bfc0c0;
+  margin: 20px 20px 20px 20px;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+a {
+  color: #bfc0c0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#button-3 {
+  position: absolute;
+  bottom: 10px;
+  left: 530px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#button-tool {
+  position: absolute;
+  bottom: 90px;
+  right: 585px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#button-3 a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+#button-tool a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #bfc0c0;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#button-7 {
+  position: absolute;
+  bottom: 10px;
+  left: 730px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#button-7 a {
+  position: relative;
   left: 0;
-  border-radius: 0;
-  border-bottom: 2px solid #eee;
+  transition: all 0.35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #bfc0c0;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease-Out;
+  bottom: 0;
+}
+
+#button-7 img {
+  width: 20px;
+  height: auto;
+}
+
+#button-7:hover #dub-arrow {
+  left: 0;
+}
+
+#button-7:hover a {
+  left: 150px;
+}
+
+#button-5 {
+  position: absolute;
+  bottom: 10px;
+  left: 470px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#button-5 a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: #bfc0c0;
+  position: absolute;
+  transition: all 0.3s ease-Out;
+}
+
+#button-5:hover #translate {
+  left: 0;
+}
+
+#button-5:hover a {
+  color: #2d3142;
+}
+
+#button-3:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button-tool:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button-3:hover a {
+  color: #2d3142;
+}
+
+#button-tool:hover a {
+  color: #2d3142;
 }
 .modal-move {
   position: absolute;
@@ -145,16 +257,6 @@
   border-radius: 20px;
   background-image: url("./Dashboard.png");
 }
-
-/* .buttonOne {
-  background-color: green;
-  position: absolute;
-  right: 380px;
-  top: 40px;
-  width: 70px;
-  height: 25px;
-  border-radius: 10px;
-} */
 
 .dash-title {
   color: #5271ff;
@@ -221,6 +323,14 @@ body {
   top: 0px;
   padding: 20px;
   right: 500px;
+  text-align: center;
+}
+.container-two-tools {
+  /* position: relative; */
+  position: absolute;
+  top: 50px;
+  padding: 20px;
+  right: 300px;
   text-align: center;
 }
 .container-three {
@@ -367,7 +477,6 @@ input[type="number"] {
   transition: opacity 0.3s ease;
 
   z-index: 500;
- 
 }
 
 .list li:hover .delete-btn {
