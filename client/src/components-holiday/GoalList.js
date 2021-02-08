@@ -12,7 +12,7 @@ export const GoalList = () => {
   return (
     <>
       <h3>Your past goals:</h3>
-      <ul className="list">
+      <ul className='list'>
         {goals.map((goal) => (
           <Goal key={goal.id} goal={goal} />
         ))}

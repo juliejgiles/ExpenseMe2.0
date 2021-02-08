@@ -4,6 +4,7 @@ import { MoneyTips } from "./pages/MoneyTips";
 import { Tools } from "./pages/Tools";
 import { Dashboard } from "./pages/Dashboard";
 import { MakeEntry } from "./pages/MakeEntry";
+import { CurrentGoal } from "./components-holiday/CurrentGoal";
 import {
   BrowserRouter as Router,
   Route,
@@ -25,6 +26,9 @@ function App() {
       </Switch>
       <Switch>
         <Route path={"/holidays"} exact={true} component={Holidays} />
+      </Switch>
+      <Switch>
+        <Route path={"/current-goal"} exact={true} component={CurrentGoal} />
       </Switch>
       <Switch>
         <Route path={"/moneytips"} exact={true} component={MoneyTips} />
