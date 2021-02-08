@@ -17,10 +17,10 @@ export const GoalDescription = () => {
 
   return (
     <>
-      <h4>Your goal:</h4>
-      <h1> {yourGoal}</h1>
-      <h4>Your goal target amount:</h4>
-      <h1> ${yourTarget}</h1>
+      <h4 className='subtitle-goal'>Your Deepest Desires:</h4>
+      <h1 className='dash-title-goal'> {yourGoal}</h1>
+      <h4 className='subtitle-goal'>How much you needa save:</h4>
+      <h1 className='dash-title-goal'> ${yourTarget}</h1>
     </>
   );
 };

@@ -10,21 +10,22 @@ import { GoalGlobalProvider } from "../context-goal/GoalGlobalState";
 import { Balance } from "../components-holiday/Balance";
 import { AddGoal } from "../components-holiday/AddGoal";
 import { GoalList } from "../components-holiday/GoalList";
-import { Progress } from "./progressBar";
+import { Progress } from "../pages/progressBar";
 import { Contribution } from "../components-holiday/Contribution";
 
-export const Holidays = () => {
+export const CurrentGoal = () => {
   return (
-    <div>
+    <div className='goal-cont'>
       <GlobalProvider>
         <GoalGlobalProvider>
           {/* <Header /> */}
-          <AddGoal />
+          {/* <AddGoal /> */}
           <GoalDescription />
-          <GoalList />
-          {/* <ContributionList />
+          <Balance />
           <AddContribution />
-          <Balance /> */}
+          <GoalList />
+          <ContributionList />
+
           <Link to='/tools/'>Back</Link>
         </GoalGlobalProvider>
       </GlobalProvider>
@@ -32,4 +33,4 @@ export const Holidays = () => {
   );
 };
 
-export default Holidays;
+export default CurrentGoal;
