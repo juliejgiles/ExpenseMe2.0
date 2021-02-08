@@ -20,7 +20,7 @@ export const GoalDescription = () => {
       <h4>Your goal:</h4>
       <h1> {yourGoal}</h1>
       <h4>Your goal target amount:</h4>
-      <h1> $ {numberWithCommas(yourTarget)}</h1>
+      <h1> ${yourTarget}</h1>
     </>
   );
 };

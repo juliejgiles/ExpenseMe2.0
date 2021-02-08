@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.buttonz {
+  color: green;
+}
+
 .cardOne {
   width: 30ch;
   height: 30ch;
@@ -90,6 +94,29 @@
   overflow: hidden;
 }
 
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 30px;
+  width: 300px;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
 a {
   color: #bfc0c0;
   text-decoration: none;
@@ -99,7 +126,17 @@ a {
 #button-3 {
   position: absolute;
   bottom: 10px;
-  left: 530px;
+  left: 450px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#arrow-down {
+  background-image: url("./Dashboard.png");
+  position: absolute;
+  bottom: 10px;
+  left: 500px;
   margin-bottom: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -139,7 +176,7 @@ a {
 #button-7 {
   position: absolute;
   bottom: 10px;
-  left: 730px;
+  left: 930px;
   margin-bottom: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -269,11 +306,10 @@ a {
 
 .chart {
   position: absolute;
-
   height: 200px;
   top: 150px;
-  width: 1200px;
-  left: 120px;
+  width: 1000px;
+  left: 260px;
 }
 .subtitle {
   font-family: "Roboto Condensed", sans-serif;
@@ -317,6 +353,7 @@ body {
 .container-one {
   position: relative;
 }
+
 .container-two {
   /* position: relative; */
   position: absolute;
@@ -335,8 +372,9 @@ body {
 }
 .container-three {
   position: absolute;
-  top: 700px;
-  display: none;
+  top: 800px;
+  left: 350px;
+  width: 800px;
 }
 h1 {
   letter-spacing: 1px;

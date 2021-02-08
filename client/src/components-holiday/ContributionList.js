@@ -12,7 +12,7 @@ export const ContributionList = () => {
   return (
     <>
       <h3>Contributions you've made</h3>
-      <ul className="list">
+      <ul className='list'>
         {contributions.map((contribution) => (
           <Contribution key={contribution.id} contribution={contribution} />
         ))}
