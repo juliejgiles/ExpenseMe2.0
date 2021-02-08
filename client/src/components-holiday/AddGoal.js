@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { GoalGlobalContext } from "../context-goal/GoalGlobalState";
 
 export const AddGoal = () => {
-  const [text, setText] = useState("No goals set");
+  const [text, setText] = useState("Add a goal");
   const [amount, setAmount] = useState(0);
 
   const { addGoal } = useContext(GoalGlobalContext);
