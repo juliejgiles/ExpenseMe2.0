@@ -8,6 +8,7 @@ import { GlobalProvider } from "../context-holiday/GlobalState";
 import { GoalGlobalProvider } from "../context-goal/GoalGlobalState";
 import { Balance } from "../components-holiday/Balance";
 import { AddGoal } from "../components-holiday/AddGoal";
+import { GoalList } from "../components-holiday/GoalList";
 
 export const Holidays = () => {
   return (
@@ -17,6 +18,7 @@ export const Holidays = () => {
           <Header />
           <AddGoal />
           <GoalDescription />
+          <GoalList />
           <ContributionList />
           <AddContribution />
           <Balance />
