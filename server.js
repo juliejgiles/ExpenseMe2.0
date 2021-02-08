@@ -16,10 +16,12 @@ connectDB();
 app.use(express.json());
 
 //bringing in router
+const goals = require("./routes/goals");
 const transactions = require("./routes/transactions");
 const contributions = require("./routes/contributions");
 
 //mounting the router
+app.use("/api/v1/goals", goals);
 app.use("/api/v1/transactions", transactions);
 app.use("/api/v1/contributions", contributions);
 
