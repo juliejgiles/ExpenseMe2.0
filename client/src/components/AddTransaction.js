@@ -1,8 +1,6 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
-import background from "../Expense-Tracker.png";
-
 export const AddTransaction = () => {
   //component level state
   const [text, setText] = useState("");
@@ -21,6 +19,10 @@ export const AddTransaction = () => {
 
     addTransaction(newTransaction);
   };
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
   return (
     <>
       <h3>Add new transaction</h3>
@@ -46,7 +48,9 @@ export const AddTransaction = () => {
             placeholder='Enter amount...'
           />
         </div>
-        <button className='btn'>Add transaction</button>
+        <button className='btn' onClick={refreshPage}>
+          Add transaction
+        </button>
       </form>
     </>
   );

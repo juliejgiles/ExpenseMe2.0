@@ -1,6 +1,263 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+.tool-container {
+  position: relative;
+}
+
+.cardOne {
+  width: 30ch;
+  height: 30ch;
+  background: grey;
+  border-radius: 5px;
+  background-image: url("./Exp-Card.png");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+  position: absolute;
+  left: 300px;
+  top: 235px;
+}
+
+.cardTwo {
+  width: 30ch;
+  height: 30ch;
+  background: grey;
+  border-radius: 5px;
+  background-image: url("./Money-Tip.png");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+  position: absolute;
+  right: 230px;
+  top: 250px;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.tool {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: #f1f1f2; /* Just to visualize the extent */
+  background-image: url("./Tool-Backdrop.png");
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.deleteTrans {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(82, 113, 255, 0.6); */
+}
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #bfc0c0;
+  margin: 20px 20px 20px 20px;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+a {
+  color: #bfc0c0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#button-3 {
+  position: absolute;
+  bottom: 10px;
+  left: 530px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#button-tool {
+  position: absolute;
+  bottom: 90px;
+  right: 585px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#button-3 a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+#button-tool a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #bfc0c0;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#button-7 {
+  position: absolute;
+  bottom: 10px;
+  left: 730px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#button-7 a {
+  position: relative;
+  left: 0;
+  transition: all 0.35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #bfc0c0;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease-Out;
+  bottom: 0;
+}
+
+#button-7 img {
+  width: 20px;
+  height: auto;
+}
+
+#button-7:hover #dub-arrow {
+  left: 0;
+}
+
+#button-7:hover a {
+  left: 150px;
+}
+
+#button-5 {
+  position: absolute;
+  bottom: 10px;
+  left: 470px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#button-5 a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: #bfc0c0;
+  position: absolute;
+  transition: all 0.3s ease-Out;
+}
+
+#button-5:hover #translate {
+  left: 0;
+}
+
+#button-5:hover a {
+  color: #2d3142;
+}
+
+#button-3:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button-tool:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button-3:hover a {
+  color: #2d3142;
+}
+
+#button-tool:hover a {
+  color: #2d3142;
+}
+.modal-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 100px;
+}
+
+.modal-content-wrapper {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: blue;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 330px;
+  border-radius: 20px;
+  background-image: url("./Dashboard.png");
+}
+
 .dash-title {
   color: #5271ff;
   font-size: 60px;
@@ -66,6 +323,14 @@ body {
   top: 0px;
   padding: 20px;
   right: 500px;
+  text-align: center;
+}
+.container-two-tools {
+  /* position: relative; */
+  position: absolute;
+  top: 50px;
+  padding: 20px;
+  right: 300px;
   text-align: center;
 }
 .container-three {
@@ -212,7 +477,6 @@ input[type="number"] {
   transition: opacity 0.3s ease;
 
   z-index: 500;
- 
 }
 
 .list li:hover .delete-btn {
