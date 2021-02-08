@@ -12,6 +12,19 @@ The application also aims to help users enter a holiday or goal they want to sav
 
 ---
 
+**Quick Links**
+
+Deployed site:
+
+Github: https://github.com/juliejgiles/ExpenseMe2.0
+
+Trello board:
+[https://trello.com/b/j4C1WFzE/t1a3-terminal-application](https://trello.com/b/j4C1WFzE/t1a3-terminal-application)
+
+<br>
+
+---
+
 ## Target Audience (R1)
 
 **_Client requirements_**
@@ -42,9 +55,7 @@ Users are able to enter data into the application about:
 
 - expenses the user makes
 
-- select an existing category for the expense
-
-- create a new category for the expense
+- enter a description for the expense or income
 
 The application outputs:
 
@@ -59,10 +70,6 @@ The application has a feature that allows users to set a goal or holiday, the ta
 **_Money saving tips_**
 
 Users can choose to view a stack of cards each containing a money-saving tip, in the presentation format of a stack of cards. The user is able to swipe a money tip away to view the next money tip beneath it.
-
-**_Authentication and user profiles_**
-
-Users must create an account to use the application (for privacy reasons as the application handles personal information regarding their income and spending). User authentication is required before each user can access their dashboard in order to protect private information.
 
 **_Database queries of user data_**
 
@@ -102,7 +109,7 @@ Users are able to search the database to see any entries they have previously ma
 
 **_Deployment_**
 
-- Netlify: a free hosting platform for deploying web applications.
+- Heroku: a cloud platform for deploying the application.
 
 **_Project Management_**
 
@@ -131,31 +138,27 @@ Users are able to search the database to see any entries they have previously ma
 
 ## User Stories (R4)
 
-- As a user, I want my personal information about my income and spending to be protected by a password.
-
-- As a user, I want to have an account that I can create, edit or delete.
-
-- As a user, I want to log in and log out of my account at any time.
-
 - As a user, I want to be able to record and save my income amount and how often my income is.
+
+- As a user, I want the application to be intuitive and easy to use.
 
 - As a user, I want to access any previously saved information I have entered into the application once I have logged into my account.
 
-- As a user, I want to be able to edit the record of my income if it changes.
+- As a user, I want to see my transactions in chronological order.
 
 - As a user, I want to be able to set the date range or time period that relates to my income.
 
 - As a user, I want to access and view previous income and expenditure information that I have entered into the application.
 
-- As a user, I want to see a visual representation of where my money goes in terms of the category of spending.
+- As a user, I want to see a visual representation of where my money goes in terms of the category of spending in the form of bar charts, pie charts and line graphs.
 
-- As a user, I want to be able to record my upcoming holidays and goals and upload a picture of that holiday/goal.
+- As a user, I want to be able to record my upcoming holidays and goals.
 
-- As a user, I want to know how long it will take me to save up for a holiday or goal.
+- As a user, I want to see my progress in terms of saving up for a holiday or goal.
 
 - As a user, I want to record how much money I’ve saved towards a holiday or goal and how much left I have to go to reach that goal.
 
-- As a user, I want the option see money saving tips, but only if I choose to.
+- As a user, I want the option see money saving tips.
 
 <br>
 
