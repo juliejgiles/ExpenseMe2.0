@@ -32,8 +32,6 @@ export const CurrentGoal = () => {
       >
         <GlobalProvider>
           <GoalGlobalProvider>
-            {/* <Header /> */}
-            {/* <AddGoal /> */}
             <GoalDescription />
             <Balance />
             <AddContribution />
@@ -51,12 +49,12 @@ export const CurrentGoal = () => {
                 <a>Back</a>
               </div>
             </Link>
-            <Link to='/'>
+            {/* <Link to='/'>
               <div className='button-down' id='button-scroll'>
                 <div id='circle'></div>
                 <a>▼</a>
               </div>
-            </Link>
+            </Link> */}
             <Link to='/tools/'>Back</Link>
           </GoalGlobalProvider>
         </GlobalProvider>
