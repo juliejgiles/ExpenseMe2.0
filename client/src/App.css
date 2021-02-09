@@ -512,6 +512,7 @@ body {
   margin: 0;
   font-family: "Spartan", sans-serif;
   background-color: #f1f1f2;
+
 }
 
 .container-one {
@@ -519,11 +520,11 @@ body {
 }
 
 .container-two {
-  /* position: relative; */
-  position: absolute;
+  position: relative;
+  /* position: absolute; */
   top: 0px;
   padding: 20px;
-  right: 500px;
+  /* right: 500px; */
   text-align: center;
 }
 .container-two-tools {

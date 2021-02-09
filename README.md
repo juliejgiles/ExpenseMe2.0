@@ -1,6 +1,6 @@
 # ExpenseMe App
 
----
+## ![Image of app](./docs/header-image.png)
 
 ## Purpose (R1)
 
