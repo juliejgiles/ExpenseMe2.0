@@ -24,4 +24,4 @@ yarn-error.log*
 
 
 # mongo MONGO_URI
-config/config.env
+# config/config.env
