@@ -34,6 +34,8 @@ const pages = [
   ),
 ];
 
+//test
+
 export const MoneyTips = () => {
   const [index, set] = useState(0);
   const onClick = useCallback(() => set((state) => (state + 1) % 3), []);
