@@ -23,8 +23,8 @@ export const AddContribution = () => {
     window.scrollTo(0, 0);
   }
   return (
-    <div>
-      <h3>Make a contribution towards your goal </h3>
+    <div id='main'>
+      <h3 className='makecont'>Make a contribution towards your goal </h3>
       <form onSubmit={onSubmit}>
         <div className='form-control'>
           <label htmlFor='text'>Description</label>
