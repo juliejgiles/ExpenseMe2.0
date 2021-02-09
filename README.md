@@ -202,6 +202,8 @@ Users are able to search the database to see any entries they have previously ma
 
 ![Goal Tracker](./docs/Goal_Tracker_copy.png)
 
+---
+
 ## Mockups
 
 ### Home Page
@@ -220,6 +222,80 @@ Users are able to search the database to see any entries they have previously ma
 ### Tools
 
 ![Mockup](./docs/5.png)
+
+---
+
+## User Testing (R8)
+
+# Manual Testing
+
+**Link to video of manual testing:** [insert link]
+
+**Development Mode - Desktop/laptop**
+
+| TYPE         | TASK                                                    | OUTCOME | COMMENTS                        |
+| ------------ | ------------------------------------------------------- | ------- | ------------------------------- |
+| Transactions | User can create an entry for income and expense         | Pass    | Data passes to the charts       |
+| Transactions | user can remove an entry for income and expense         | Pass    |                                 |
+| Transactions | user can use the tools                                  | Pass    | takes you to the tools page     |
+| Goal Tracker | User can add a new goal and amount                      | Pass    |                                 |
+| Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
+| Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+
+**Production Mode - Desktop/laptop**
+
+| TYPE         | TASK                                                    | OUTCOME | COMMENTS                        |
+| ------------ | ------------------------------------------------------- | ------- | ------------------------------- |
+| Transactions | User can create an entry for income and expense         | Pass    | Data passes to the charts       |
+| Transactions | user can remove an entry for income and expense         | Pass    |                                 |
+| Transactions | user can use the tools                                  | Pass    | takes you to the tools page     |
+| Goal Tracker | User can add a new goal and amount                      | Pass    |                                 |
+| Goal Tracker | User can remove a new goal and amount                   | Pass    |                                 |
+| Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
+| Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+
+**Development Mode - Mobile**
+
+| TYPE         | TASK                                                    | OUTCOME | COMMENTS                        |
+| ------------ | ------------------------------------------------------- | ------- | ------------------------------- |
+| Transactions | User can create an entry for income and expense         | Pass    | Data passes to the charts       |
+| Transactions | user can remove an entry for income and expense         | Pass    |                                 |
+| Transactions | user can use the tools                                  | Pass    | takes you to the tools page     |
+| Goal Tracker | User can add a new goal and amount                      | Pass    |                                 |
+| Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
+| Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+
+**Production Mode - Mobile**
+
+| TYPE         | TASK                                                    | OUTCOME | COMMENTS                        |
+| ------------ | ------------------------------------------------------- | ------- | ------------------------------- |
+| Transactions | User can create an entry for income and expense         | Pass    | Data passes to the charts       |
+| Transactions | user can remove an entry for income and expense         | Pass    |                                 |
+| Transactions | user can use the tools                                  | Pass    | takes you to the tools page     |
+| Goal Tracker | User can add a new goal and amount                      | Pass    |                                 |
+| Goal Tracker | User can remove a new goal and amount                   | Pass    |                                 |
+| Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
+| Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+
+mac has inbuilt screen recording that you can use to test out functionality, upload to google drive/youtube and provide a link
+
+---
+
+## Formal testing framework: Cypress (R9)
+
+**Routes tests**
+
+![Cypress tests](./docs/routes-tests.png)
+
+![Cypress tests](./docs/routes-tests-2.png)
+
+**API response tests**
+![Cypress tests](./docs/api-response-tests.png)
+
+**CRUD function tests**
+![Cypress tests](./docs/crud-tests.png)
+
+---
 
 ## Trello board screenshots (R6)
 
