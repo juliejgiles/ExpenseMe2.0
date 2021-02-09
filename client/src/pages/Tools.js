@@ -54,7 +54,7 @@ export const Tools = () => {
           </div>
 
           <div className='tool-container'>
-            <Link to='/holidays/'>
+            <Link to='/current-goal'>
               <animated.div
                 class='cardOne'
                 onMouseMove={({ clientX: x, clientY: y }) =>

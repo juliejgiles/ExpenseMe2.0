@@ -6,10 +6,6 @@
   position: relative;
 }
 
-.buttonz {
-  color: green;
-}
-
 .cardOne {
   width: 30ch;
   height: 30ch;
@@ -100,11 +96,10 @@
   bottom: 0;
   right: 0;
   padding: 360px;
-  padding-top: 180px;
-  overflow: auto;
-  background: #f1f1f2; /* Just to visualize the extent */
+  padding-top: 100px;
+
   background-image: url("./goal-background.png");
-  background-size: 100%;
+  background-size: 110%;
   background-repeat: no-repeat;
 }
 
@@ -116,7 +111,7 @@
   height: 100px;
   width: 700px;
   font-size: x-large;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .progress-done {
@@ -167,11 +162,40 @@ a {
   cursor: pointer;
 }
 
+#button-scroll {
+  position: absolute;
+  bottom: 30px;
+  right: 585px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#button-addGoal {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+}
+
 #button-3 a {
   position: relative;
   transition: all 0.45s ease-Out;
 }
 #button-tool a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#button-scroll a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+#button-addGoal a {
   position: relative;
   transition: all 0.45s ease-Out;
 }
@@ -188,7 +212,21 @@ a {
   top: 20px;
   left: 70px;
 }
+.button-down {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
 
+  margin: 20px 20px 20px 20px;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 #button-7 {
   position: absolute;
   bottom: 10px;
@@ -280,11 +318,33 @@ a {
   left: -70px;
 }
 
+#button-scroll:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+#button-addGoal:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
 #button-3:hover a {
   color: #2d3142;
 }
 
 #button-tool:hover a {
+  color: #2d3142;
+}
+
+#button-scroll:hover a {
+  color: #2d3142;
+}
+#button-addGoal:hover a {
   color: #2d3142;
 }
 .modal-move {

@@ -18,13 +18,10 @@ export const Holidays = () => {
     <div>
       <GlobalProvider>
         <GoalGlobalProvider>
-          {/* <Header /> */}
           <AddGoal />
-          <GoalDescription />
+
           <GoalList />
-          {/* <ContributionList />
-          <AddContribution />
-          <Balance /> */}
+
           <Link to='/tools/'>Back</Link>
         </GoalGlobalProvider>
       </GlobalProvider>
