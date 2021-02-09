@@ -21,6 +21,16 @@ Github: https://github.com/juliejgiles/ExpenseMe2.0
 Trello board:
 [https://trello.com/b/j4C1WFzE/t1a3-terminal-application](https://trello.com/b/j4C1WFzE/t1a3-terminal-application)
 
+**How to use**
+
+1. run `npm install` in the root (of the ExpenseMe2.0 directory)
+
+2. cd into the `client` directory, and run `npm install`
+
+3. cd back into the root directory
+
+4. run `npm run dev`
+
 <br>
 
 ---
@@ -229,7 +239,15 @@ Users are able to search the database to see any entries they have previously ma
 
 # Manual Testing
 
-**Link to video of manual testing:** [insert link]
+**YouTube Links to videos of manual testing:**
+
+Development manual test: https://www.youtube.com/watch?v=-osYaj5go4Q
+
+Deployed manual test: https://www.youtube.com/watch?v=ppY4C8Ui6Tc
+
+**Google Drive Links to videos of manual testing:**
+
+https://drive.google.com/drive/folders/1ut1w6jp2KfhipS3XAjmGUTvZm-nwkuD5
 
 **Development Mode - Desktop/laptop**
 
@@ -241,6 +259,9 @@ Users are able to search the database to see any entries they have previously ma
 | Goal Tracker | User can add a new goal and amount                      | Pass    |                                 |
 | Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
 | Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+| Money Tips   | User can view the money tips page                       | Pass    |                                 |
+
+<br>
 
 **Production Mode - Desktop/laptop**
 
@@ -253,6 +274,9 @@ Users are able to search the database to see any entries they have previously ma
 | Goal Tracker | User can remove a new goal and amount                   | Pass    |                                 |
 | Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
 | Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+| Money Tips   | User can view the money tips page                       | Pass    |                                 |
+
+<br>
 
 **Development Mode - Mobile**
 
@@ -264,6 +288,9 @@ Users are able to search the database to see any entries they have previously ma
 | Goal Tracker | User can add a new goal and amount                      | Pass    |                                 |
 | Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
 | Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+| Money Tips   | User can view the money tips page                       | Pass    |                                 |
+
+<br>
 
 **Production Mode - Mobile**
 
@@ -276,6 +303,9 @@ Users are able to search the database to see any entries they have previously ma
 | Goal Tracker | User can remove a new goal and amount                   | Pass    |                                 |
 | Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
 | Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+| Money Tips   | User can view the money tips page                       | Pass    |                                 |
+
+<br>
 
 mac has inbuilt screen recording that you can use to test out functionality, upload to google drive/youtube and provide a link
 
