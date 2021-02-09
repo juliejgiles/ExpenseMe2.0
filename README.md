@@ -14,7 +14,7 @@ The application also aims to help users enter a holiday or goal they want to sav
 
 **Quick Links**
 
-Deployed site:
+Deployed site: https://expenseme.herokuapp.com/
 
 Github: https://github.com/juliejgiles/ExpenseMe2.0
 
