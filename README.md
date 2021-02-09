@@ -263,6 +263,7 @@ https://drive.google.com/drive/folders/1ut1w6jp2KfhipS3XAjmGUTvZm-nwkuD5
 
 <br>
 
+
 **Production Mode - Desktop/laptop**
 
 | TYPE         | TASK                                                    | OUTCOME | COMMENTS                        |
@@ -278,6 +279,7 @@ https://drive.google.com/drive/folders/1ut1w6jp2KfhipS3XAjmGUTvZm-nwkuD5
 
 <br>
 
+
 **Development Mode - Mobile**
 
 | TYPE         | TASK                                                    | OUTCOME | COMMENTS                        |
@@ -291,6 +293,7 @@ https://drive.google.com/drive/folders/1ut1w6jp2KfhipS3XAjmGUTvZm-nwkuD5
 | Money Tips   | User can view the money tips page                       | Pass    |                                 |
 
 <br>
+
 
 **Production Mode - Mobile**
 
@@ -306,6 +309,7 @@ https://drive.google.com/drive/folders/1ut1w6jp2KfhipS3XAjmGUTvZm-nwkuD5
 | Money Tips   | User can view the money tips page                       | Pass    |                                 |
 
 <br>
+
 
 mac has inbuilt screen recording that you can use to test out functionality, upload to google drive/youtube and provide a link
 
