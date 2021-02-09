@@ -161,6 +161,14 @@ a {
   border-radius: 30px;
   cursor: pointer;
 }
+#button-tips {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  margin-bottom: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
 
 #button-scroll {
   position: absolute;
@@ -182,11 +190,21 @@ a {
   font-size: 12px;
 }
 
+.money-back {
+  background-image: url("./Dashboard.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 #button-3 a {
   position: relative;
   transition: all 0.45s ease-Out;
 }
 #button-tool a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+#button-tips a {
   position: relative;
   transition: all 0.45s ease-Out;
 }
@@ -200,6 +218,25 @@ a {
   transition: all 0.45s ease-Out;
 }
 
+.simple-trans-main > div {
+  cursor: pointer;
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  left: 420px;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 25em;
+  will-change: transform, opacity;
+  text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+  background-repeat: no-repeat;
+  background-size: 600px;
+}
+
 #circle {
   width: 0%;
   height: 0%;
@@ -211,6 +248,21 @@ a {
   transition: all 0.5s ease-Out;
   top: 20px;
   left: 70px;
+}
+
+.MoneyTips {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.makecont {
+  padding-top: 70px;
 }
 .button-down {
   display: inline-flex;
@@ -317,6 +369,13 @@ a {
   top: -70px;
   left: -70px;
 }
+#button-tips:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
 
 #button-scroll:hover #circle {
   width: 200%;
@@ -338,6 +397,10 @@ a {
 }
 
 #button-tool:hover a {
+  color: #2d3142;
+}
+
+#button-tips:hover a {
   color: #2d3142;
 }
 
