@@ -8,6 +8,7 @@
   }
 }
 
+
 .tool-container {
   position: relative;
 }
@@ -515,16 +516,18 @@ body {
 
 }
 
+
+
 .container-one {
   position: relative;
 }
 
 .container-two {
-  position: relative;
-  /* position: absolute; */
+  /* position: relative; */
+  position: absolute;
   top: 0px;
   padding: 20px;
-  /* right: 500px; */
+  right: 500px;
   text-align: center;
 }
 .container-two-tools {
