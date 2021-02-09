@@ -241,6 +241,7 @@ Users are able to search the database to see any entries they have previously ma
 | Goal Tracker | User can add a new goal and amount                      | Pass    |                                 |
 | Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
 | Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+| Money Tips | User can view the money tips page | Pass    |  |
 
 **Production Mode - Desktop/laptop**
 
@@ -253,6 +254,7 @@ Users are able to search the database to see any entries they have previously ma
 | Goal Tracker | User can remove a new goal and amount                   | Pass    |                                 |
 | Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
 | Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+| Money Tips | User can view the money tips page | Pass    |  |
 
 **Development Mode - Mobile**
 
@@ -264,6 +266,7 @@ Users are able to search the database to see any entries they have previously ma
 | Goal Tracker | User can add a new goal and amount                      | Pass    |                                 |
 | Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
 | Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+| Money Tips | User can view the money tips page | Pass    |  |
 
 **Production Mode - Mobile**
 
@@ -276,6 +279,7 @@ Users are able to search the database to see any entries they have previously ma
 | Goal Tracker | User can remove a new goal and amount                   | Pass    |                                 |
 | Goal Tracker | User can add contributions and description to a goal    | Pass    | data passes to the progress bar |
 | Goal Tracker | User can remove contributions and description to a goal | Pass    | data passes to the progress bar |
+| Money Tips | User can view the money tips page | Pass    |  |
 
 mac has inbuilt screen recording that you can use to test out functionality, upload to google drive/youtube and provide a link
 
