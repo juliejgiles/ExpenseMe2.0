@@ -18,32 +18,38 @@ export const AddContribution = () => {
 
     addContribution(newContribution);
   };
-
+  function refreshPage() {
+    window.location.reload(false);
+    window.scrollTo(0, 0);
+  }
   return (
     <div>
       <h3>Make a contribution towards your goal </h3>
       <form onSubmit={onSubmit}>
-        <div className="form-control">
-          <label htmlFor="text">Description</label>
+        <div className='form-control'>
+          <label htmlFor='text'>Description</label>
           <input
-            type="text"
+            type='text'
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Enter text..."
+            placeholder='Enter text...'
           />
         </div>
-        <div className="form-control">
-          <label htmlFor="amount">
+        <div className='form-control'>
+          <label htmlFor='amount'>
             Amount <br />
           </label>
           <input
-            type="number"
+            type='number'
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            placeholder="Enter amount..."
+            placeholder='Enter amount...'
           />
         </div>
-        <button className="btn">Add Contribution</button>
+
+        <button className='btn' onClick={refreshPage}>
+          Add Contribution
+        </button>
       </form>
     </div>
   );
