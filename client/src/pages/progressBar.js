@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
-import PropTypes from "prop-types";
+import React, { useContext } from "react";
 import { GoalGlobalContext } from "../context-goal/GoalGlobalState";
 
 export const Progress = ({ done }) => {
@@ -26,8 +24,8 @@ export const Progress = ({ done }) => {
   }, 400);
 
   return (
-    <div className='progress'>
-      <div className='progress-done' style={style}>
+    <div className="progress">
+      <div className="progress-done" style={style}>
         {done}%
       </div>
     </div>

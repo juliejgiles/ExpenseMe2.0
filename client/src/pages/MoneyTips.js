@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { render } from "react-dom";
 import React, { useState, useCallback } from "react";
 import { useTransition, animated } from "react-spring";
+import { motion, AnimatePresence } from "framer-motion";
 import CardA from "../1.png";
 import CardB from "../2.png";
 import CardC from "../3.png";
@@ -33,6 +34,8 @@ const pages = [
   ),
 ];
 
+//test
+
 export const MoneyTips = () => {
   const [index, set] = useState(0);
   const onClick = useCallback(() => set((state) => (state + 1) % 3), []);
@@ -42,19 +45,33 @@ export const MoneyTips = () => {
     leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
   });
   return (
-    <div className='money-back'>
-      <div className='simple-trans-main' onClick={onClick}>
-        {transitions.map(({ item, props, key }) => {
-          const Page = pages[item];
-          return <Page key={key} style={props} />;
-        })}
-        <Link to='/tools/'>
-          <div className='button' id='button-tips'>
-            <div id='circle'></div>
-            <a>Back</a>
-          </div>
-        </Link>
-      </div>
-    </div>
+    <AnimatePresence>
+      <motion.div
+        className='money-back'
+        initial={{
+          opacity: 0,
+        }}
+        transition={{ duration: 1.5 }}
+        animate={{
+          opacity: 1,
+        }}
+        exit={{
+          opacity: 0,
+        }}
+      >
+        <div className='simple-trans-main' onClick={onClick}>
+          {transitions.map(({ item, props, key }) => {
+            const Page = pages[item];
+            return <Page key={key} style={props} />;
+          })}
+          <Link to='/tools/'>
+            <div className='button' id='button-tips'>
+              <div id='circle'></div>
+              <a>Back</a>
+            </div>
+          </Link>
+        </div>
+      </motion.div>
+    </AnimatePresence>
   );
 };

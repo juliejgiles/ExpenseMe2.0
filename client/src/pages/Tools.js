@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import ReactDOM from "react-dom";
 import { useSpring, animated } from "react-spring";
 import "../App.css";
 
@@ -28,7 +27,7 @@ export const Tools = () => {
   return (
     <AnimatePresence>
       <motion.div
-        className='tool'
+        className="tool"
         initial={{
           opacity: 0,
         }}
@@ -41,22 +40,22 @@ export const Tools = () => {
         }}
       >
         <div>
-          <Link to='/'>
-            <div className='button' id='button-tool'>
-              <div id='circle'></div>
+          <Link to="/">
+            <div className="button" id="button-tool">
+              <div id="circle"></div>
               <a>Back</a>
             </div>
           </Link>
-          <div className='container-two-tools'>
-            <h1 className='dash-title'>Tricks Of The Trade</h1>
+          <div className="container-two-tools">
+            <h1 className="dash-title">Tricks Of The Trade</h1>
 
-            <h4 className='subtitle'>WATCH YOUR WALLET GROW</h4>
+            <h4 className="subtitle">WATCH YOUR WALLET GROW</h4>
           </div>
 
-          <div className='tool-container'>
-            <Link to='/current-goal'>
+          <div className="tool-container">
+            <Link to="/current-goal">
               <animated.div
-                class='cardOne'
+                class="cardOne"
                 onMouseMove={({ clientX: x, clientY: y }) =>
                   set({ xys: calc(x, y) })
                 }
@@ -66,9 +65,9 @@ export const Tools = () => {
             </Link>
           </div>
 
-          <Link to='/moneytips/'>
+          <Link to="/moneytips/">
             <animated.div
-              class='cardTwo'
+              class="cardTwo"
               onMouseMove={({ clientX: x, clientY: y }) =>
                 bet({ xys: calc(x, y) })
               }
