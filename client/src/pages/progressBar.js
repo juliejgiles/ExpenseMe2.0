@@ -18,6 +18,7 @@ export const Progress = ({ done }) => {
     const newStyle = {
       opacity: 1,
       width: `${done}%`,
+      maxWidth: "700px",
     };
 
     setStyle(newStyle);
