@@ -25,6 +25,13 @@ describe("The Tools page", () => {
   });
 });
 
+describe("The current goals page", () => {
+  it("successfully loads", () => {
+    cy.visit("http://localhost:3000/current-goal");
+    cy.url().should("include", "current-goal");
+  });
+});
+
 describe("The entry page", () => {
   it("successfully loads", () => {
     cy.visit("http://localhost:3000/entry");
